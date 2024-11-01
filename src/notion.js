@@ -1,6 +1,5 @@
 import dotenv from 'dotenv';
 import { Client, LogLevel } from '@notionhq/client';
-import { translateText } from './translation'
 
 dotenv.config();
 
