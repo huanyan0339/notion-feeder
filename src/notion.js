@@ -1,6 +1,6 @@
 import dotenv from 'dotenv';
 import { Client, LogLevel } from '@notionhq/client';
-
+import { getFeedUrlsFromNotion } from './translation'
 dotenv.config();
 
 const {
