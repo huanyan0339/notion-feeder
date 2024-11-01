@@ -1,6 +1,7 @@
 import dotenv from 'dotenv';
 import { Client, LogLevel } from '@notionhq/client';
-import { getFeedUrlsFromNotion } from './translation'
+import { translateText } from './translation'
+
 dotenv.config();
 
 const {
@@ -73,7 +74,7 @@ export async function addFeedItemToNotion(notionItem) {
           url: link,
         },
       },
-      children: content,
+      children: content
     });
   } catch (err) {
     console.error(err);
